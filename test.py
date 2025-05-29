@@ -173,7 +173,7 @@ def test_server_connection():
     try:
         # Cloud Run 서버의 루트 경로 확인
         base_url = API_URL.replace('/api/remove-background', '')
-        response = requests.get(base_url, timeout=10)
+        response = requests.get(base_url, timeout=40)
         print("✅ 서버에 연결되었습니다.")
         return True
     except requests.exceptions.ConnectionError:
