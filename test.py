@@ -4,7 +4,7 @@ from datetime import datetime
 
 # API 서버 설정 - Cloud Run URL (포트 번호 제거)
 API_URL = "https://rembg-api-626680981853.asia-northeast3.run.app/api/remove-background"
-TOKEN = "dsablcvwahdbhsabc1834bkjewpfubaiu42tjhrbufbd"
+TOKEN = "토큰큰"
 
 def test_with_header_token(image_path):
     """
