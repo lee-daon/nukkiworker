@@ -22,7 +22,7 @@ async function removeBackground() {
         const response = await axios.post(url, form, {
             headers: {
                 ...form.getHeaders(),
-                'Authorization': 'Bearer dsablcvwahdbhsabc1834bkjewpfubaiu42tjhrbufbd'
+                'Authorization': 'Bearer 토큰'
             },
             responseType: 'arraybuffer'
         });
@@ -40,10 +40,10 @@ removeBackground();
 ### curl 예시
 ```bash
 curl -X POST \
-  -H "Authorization: Bearer dsablcvwahdbhsabc1834bkjewpfubaiu42tjhrbufbd" \
+  -H "Authorization: Bearer 토큰" \
   -F "file=@image.jpg" \
   https://rembg-api-626680981853.asia-northeast3.run.app/api/remove-background \
   --output result.png
 ```
 
-**토큰**: `dsablcvwahdbhsabc1834bkjewpfubaiu42tjhrbufbd`
+**토큰**: `토큰`
