@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # 토큰 설정
-VALID_TOKEN = "dsablcvwahdbhsabc1834bkjewpfubaiu42tjhrbufbd"
+VALID_TOKEN = "토큰"
 
 def validate_token():
     """
